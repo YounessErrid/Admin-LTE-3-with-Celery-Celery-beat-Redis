@@ -15,7 +15,7 @@ def send_daily_email():
         subject='Daily Report from django',
         message='This is your daily report!',
         from_email=settings.DEFAULT_FROM_EMAIL,
-        recipient_list=['younessnono682@gmail.com'],  # Replace with actual recipient
+        recipient_list=['user@test.com'],  # Replace with actual recipient
         fail_silently=False,
     )
     print("Daily email sent.")

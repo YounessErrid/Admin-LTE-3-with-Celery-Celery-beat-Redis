@@ -146,10 +146,10 @@ EMAIL_USE_SSL = False
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = '1dd96592d0160f'
 EMAIL_HOST_PASSWORD = '4b17003a61763b'
-DEFAULT_FROM_EMAIL = 'contact@qms.com'
+DEFAULT_FROM_EMAIL = 'sender@test.com'
 
 
-# 
+# if you are using .env file
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_HOST = os.getenv('EMAIL_HOST')
 # EMAIL_PORT = int(os.getenv('EMAIL_PORT', 587))  # Default to 587 if not set
