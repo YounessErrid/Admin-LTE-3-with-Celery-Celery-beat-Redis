@@ -23,6 +23,12 @@ app.conf.beat_schedule = {
         'task': 'app.tasks.say_hello',
         'schedule': crontab(minute='*/1'),  # Executes every 1 minute
     },
+
+    # Schedule the 'send_daily_email' task to run every day at a specific time (e.g., midnight)
+    'send-daily-email-everyday': {
+        'task': 'app.tasks.send_daily_email',
+        'schedule': crontab(minute='*/1'),  # Executes every day at midnight
+    },
 }
 
 
